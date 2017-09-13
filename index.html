@@ -1,21 +1,33 @@
-<html>
-  <head>
-  <title>mapas</title>
-    <!--Link de mi css de mi-->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-  </head>
-  <body>
-    <h3>My Google Maps Demo</h3>
-    <div id="map"></div>
-    <button id="encuentrame">Encuentrame</button>
-    <script src="assets/js/main.js"></script>
-    <!--SCRIPT DEL MAPA con el generador de api-->
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcDyqQdKZityQJ2FOelWKO_yrjFFA_7jQ&callback=initMap">
-    </script>
-    <!--JQRY ES PARA TODOS LOS ARCHIVOS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
 
-</script>
-  </body>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<title></title>
+</head>
+<body>
+	<section class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<button id="encuentrame">Encuentrame</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-sm-12" id="map">
+				<!--aqui ira el mapa sip-->
+			</div>
+		</div>
+	</section>
+	<!--Descargando librerias de place google maps js api-->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcDyqQdKZityQJ2FOelWKO_yrjFFA_7jQ&callback=initMap&libraries=places"></script>
+    <script href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLKfuWVxZxUPnCJA712mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"> </script>
+    <script src="assets/js/app.js"></script>
+</body>
 </html>
